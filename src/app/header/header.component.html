@@ -1,0 +1,21 @@
+<div class="header">
+<!-- <mat-toolbar color="primary">
+<a routerLink="/home"> <button mat-raised-button color="primary" *ngIf="isAuthenticated()" class="home">Home</button></a>
+Welcome to<span class="pointer" (click)="reRoute()">&nbsp;The Social Spectrum &nbsp;</span>
+ - [Some cliched tagline]<span class="example-spacer"></span>
+<button mat-raised-button color="warn" (click)="onSignOut()" *ngIf="isAuthenticated()" class="signOut">Sign out</button>
+</mat-toolbar> -->
+
+<!-- <a routerLink="/home"> <button mat-raised-button color="primary" *ngIf="isAuthenticated()" class="home">Home</button></a>
+<a routerLink="/news"> <button mat-raised-button color="primary" *ngIf="isAuthenticated()" class="news">News</button></a> -->
+Welcome to<span class="pointer" (click)="reRoute()">&nbsp;The Social Spectrum &nbsp;</span>
+ - [Some cliched tagline]
+<!-- <button mat-raised-button color="warn" (click)="onSignOut()" *ngIf="isAuthenticated()" class="signOut">Sign out</button> -->
+<!-- <hr> -->
+</div>
+<div class="topnav">
+    <a class="active" routerLink="/home" *ngIf="isAuthenticated()">Home</a>
+    <a routerLink="/news" *ngIf="isAuthenticated()">News</a>
+    <button mat-raised-button color="warn" style="float:right; margin:6px" class="clickable" (click)="onSignOut()" *ngIf="isAuthenticated()" >Sign out</button>
+  </div>
+<br>

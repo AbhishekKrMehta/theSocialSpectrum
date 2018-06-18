@@ -1,0 +1,51 @@
+<mat-toolbar color="primary">Trending Searches : &emsp;
+  <button mat-raised-button color="primary" (click)="displayNews('donald trump')">donald trump</button>&emsp;
+  <button mat-raised-button color="primary" (click)="displayNews('football')">football</button>&emsp;
+  <button mat-raised-button color="primary" (click)="displayNews('stock')">stock</button>&emsp;
+  <button mat-raised-button color="primary" (click)="displayNews('bitcoin')">bitcoin</button>&emsp;
+  <button mat-raised-button color="primary" (click)="displayNews('cricket')">cricket</button>&emsp;
+<span class="example-spacer"></span>
+  <input type="text" class="search" placeholder="Enter keyword" #value (keypress)="search($event,value.value)">&emsp;
+  <button style="float:right" mat-raised-button color="accent" (click)="displayNews(value.value)">Search</button>
+
+</mat-toolbar>
+
+  <!-- weather widget start -->
+  <div id="weatherWidget"></div>
+  <!-- weather widget end -->
+
+<div id="cards">
+  <mat-card class="example-card" *ngFor="let news of News">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title><a [href]= "news.url | sanitize" target="_blank">{{news.title}}</a></mat-card-title>
+      <mat-card-subtitle>{{news.source.name}}</mat-card-subtitle>
+      <p style="font-size: 12px; margin-top: 0px;">{{news.publishedAt | date:'medium'}}</p>
+     </mat-card-header>
+    <img mat-card-image [src]="news.urlToImage" alt="image" style="max-height:350px; min-height: 260px">
+    <mat-card-content>
+      <p>
+      {{news.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+      <a [href]="news.url | sanitize" target="_blank" style="float:right" ><button mat-button>Source</button></a>
+    </mat-card-actions>
+  </mat-card>
+
+<div class="invalidSearch " *ngIf="News.length==0">
+        Your search <span style="color:white">- {{keyWord}} -</span> did not match any documents.
+<br>
+      Try the following suggestions:
+      <br>
+      <ul>
+        <li>Make sure that all words are spelled correctly.</li>
+        <li>Try different keywords.</li>
+        <li>Try more general keywords.</li>
+      </ul>
+      
+</div>
+
+</div>

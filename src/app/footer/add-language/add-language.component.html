@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  Add new Language request
+  <span class="example-spacer"></span>
+  <button matTooltip="Close Window" mat-mini-fab color="primary" mat-dialog-close>x</button>
+</mat-toolbar>
+  <br>
+  <br>
+<form class="example-form">
+    <mat-form-field class="example-full-width" style="width:320px" >
+      <input matInput placeholder="Which Language would you like us to add?" name="lanuage" [formControl]="language" required>
+      <mat-error *ngIf="language.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+  <br>
+  <br>
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Leave a comment"></textarea>
+    </mat-form-field>
+  <br>
+  </form>
+  <button mat-raised-button color="primary" (click)="onSubmit(); openSnackBar()">Submit</button>
+  

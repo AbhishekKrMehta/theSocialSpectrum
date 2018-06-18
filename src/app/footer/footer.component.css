@@ -1,0 +1,33 @@
+.language{
+    width:auto;
+    height:40px;
+    font-size:15px;
+    }
+    
+mat-toolbar{
+    height:40px;
+    font-size:15px;
+}
+
+.language li {
+    display: inline;
+    font-size: 13px;
+}
+
+
+/* .language :visited { 
+    color: white;
+ }   */
+
+  /* a:link ,a:hover, a:active  {
+    color: white;
+}  */
+
+.language a,  .language a:link {
+    color: white;
+}
+
+ li {
+    display: inline;
+    font-size: 13px;
+}

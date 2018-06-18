@@ -1,0 +1,55 @@
+
+
+/* style related to card starts*/
+
+.example-header-image {
+    background-image: url('https://goo.gl/SYKZLH');
+    background-size: cover;
+  }
+  
+.mat-card {
+      display: inline-block;
+  }
+
+.example-card {
+    width: 355px;
+    margin: 5px;
+  }
+  
+  
+  .mat-card-title{
+    font-size: 17px;
+    
+  }
+  
+    a{
+    color: #4a4b98f5;
+    text-decoration: none;
+  }
+  
+  /* style related to card ends*/
+
+
+  #weatherWidget {
+    float: right;
+  } 
+
+  input[type=text] {
+    /* width: 100%; */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.invalidSearch{
+  background-color: rgba(51, 51, 51, 0.377);
+  padding: 30px;
+  line-height: 1.6;
+  font-size: 20px;
+  color: #ccc;
+  margin-top: 7px;
+  width: 1193px;
+}

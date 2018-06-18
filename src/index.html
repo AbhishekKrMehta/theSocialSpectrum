@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TheSocialSpectrum</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    html{
+     background-image:  url('../../assets/cyan-pentagonal-background - inverted.jpg');
+     background-repeat:no-repeat;
+     background-size:cover;
+     }
+  </style>
+
+</head>
+<body>
+  <app-root></app-root>
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAQJ7Y1oqQxiNInkUbisf0dBQpuW5okAgQ",
+      authDomain: "the-social-spectrum.firebaseapp.com",
+      databaseURL: "https://the-social-spectrum.firebaseio.com",
+      projectId: "the-social-spectrum",
+      storageBucket: "the-social-spectrum.appspot.com",
+      messagingSenderId: "257016744184"
+    };
+    firebase.initializeApp(config);
+  </script>
+</body>
+</html>

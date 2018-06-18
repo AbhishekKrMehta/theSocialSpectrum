@@ -1,0 +1,104 @@
+/* mat-toolbar {
+    padding-top: 15px;
+    font-size: 30px;
+    display: inline-block;;
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+    
+}
+
+mat-toolbar span a:link {
+font-weight: normal;
+font-style: normal;
+color: #df6e11 ;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.header{
+    position: relative;
+}
+button.signOut  {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}  
+
+button.home  {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+} 
+
+a {
+    text-decoration: none;
+}
+
+.pointer{
+    color: #df6e11
+} */
+
+/* old styling above */
+
+
+.header{
+    
+    background-color: rgba(51, 51, 51, 0.74);
+    padding: 12px 0px;
+    margin: -8px;
+    /* margin: -8px -8px; */
+    font-size: 27px;
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+    color: azure;
+    /* position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+     */
+}
+
+
+.pointer{
+    color: #df6e11
+}
+
+/* div.header:after{
+content: "";
+display: block;
+clear: both;
+} */
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    opacity: .98;
+    margin: -8px;
+
+  }
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }  

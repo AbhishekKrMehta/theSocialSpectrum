@@ -1,0 +1,29 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+.pointer{
+  cursor: pointer;
+}
+
+.ng-trigger-state.success{
+    background:#4caf50;
+   }
+
+.ng-trigger-state.error{
+  background:#f14e4e;
+  }  
+
+.example-spacer {
+    flex: 1 1 auto;
+  }  
+
+  .mat-dialog-container {
+    background-image:  url('../src/assets/cyan-pentagonal-background.jpg');
+    background-repeat:no-repeat;
+    background-size:contain;
+  }
+
+  .clickable {
+    cursor: pointer;
+  }
+
+
